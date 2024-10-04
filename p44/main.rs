@@ -4,7 +4,7 @@ fn main() {
 }
 
 fn pentagon_numbers() -> i64 {
-    let big_num = 100_000 as i64;
+    let big_num = 100_000_000 as i64;
     let mut min_dif = i64::MAX;
 
     let mut pentagonal_numbers = Vec::new();
