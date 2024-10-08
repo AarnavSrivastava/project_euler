@@ -70,8 +70,8 @@ fn sieve_of_eratosthenes(limit: usize, cutoff: usize) -> Vec<i32> {
     }
 
     let mut results = Vec::new();
-    for i in 0..=limit {
-        if i >= cutoff && sieve[i] {
+    for i in cutoff..=limit {
+        if sieve[i] {
             results.push(i as i32);
         }
     }
