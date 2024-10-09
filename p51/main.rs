@@ -5,10 +5,10 @@ fn main() {
 }
 
 fn prime_digit_replacements(num_digits: i32) -> usize {
-    let primes = sieve_of_eratosthenes(1_000_000);
+    let primes = sieve_of_eratosthenes(10_000_000);
 
     let mut families: HashMap<String, i32> = HashMap::new();
-    for p in 0..=1_000_000 {
+    for p in 0..=10_000_000 {
         if !primes[p] {
             continue;
         }
